@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Ornaments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/GoldPage.css">
+</head>
+<body>
+    <div class="f1">
+        <label for="">Phone No.</label>
+        <input type="number" id="PhNo">
+        <label for="">Name</label>
+        <input type="text" id="Name">
+        <label for="">Aadhar</label>
+        <input type="number" id="Aadhar">
+        <label for="">Address</label>
+        <input type="text" id="addr">
+        <label for="">Gold Rate</label>
+        <input type="text" id="rate" disabled>
+    </div>
+    <div class="f2">
+        <table>
+            <thead>
+                <tr>
+                    <th class="sino">Si No.</th>
+                    <th>Ornament</th>
+                    <th>Weight</th>
+                    <th>MC</th>
+                    <th>SGST</th>
+                    <th>CGST</th>
+                    <th>NetTotal</th>
+                </tr>
+            </thead>
+            <tbody id="newSale">
+                <tr>
+                    <td class="sino">1</td>
+                    <td>
+                        <select id="orna1">
+                        </select>
+                    </td>
+                    <td><input type="number" id="wei1"></td>
+                    <td><input type="number" id="mc1" disabled></td>
+                    <td><input type="number" id="sgst1" disabled></td>
+                    <td><input type="number" id="cgst1" disabled></td>
+                    <td><input type="number" id="net1"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="f3">
+        <table>
+            <thead>
+                <tr>
+                    <th class="sino">Si No</th>
+                    <th>Old Ornamennt</th>
+                    <th>Total</th>
+                    <th>NetTotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="sino">1</td>
+                    <td>
+                        <form id="myForm">
+                            <select id="addodeduct1" name="selectOption">
+                                <option value="Old Ornament">Old Ornament</option>
+                                <option value="Additional Charges">Additional Charges</option>
+                            </select>
+                        </form>              
+                     </td>
+                    <td><input type="text" id="addtotal1"></td>
+                    <td><label id="addNetTotal1"></label></td>
+                </tr>
+                <tr>
+                    <td class="sino">2</td>
+                    <td>
+                        <form id="myForm">
+                            <select id="addodeduct2" name="selectOption">
+                                <option value="Old Ornament">Old Ornament</option>
+                                <option value="Additional Charges">Additional Charges</option>
+                            </select>
+                        </form>  
+                    </td>
+                    <td><input type="text" id="addtotal2"></td>
+                    <td><label id="addNetTotal2"></label></td>
+                </tr>
+                <tr>
+                    <td class="sino">3</td>
+                    <td>
+                        <form id="myForm">
+                            <select id="addodeduct3" name="selectOption">
+                                <option value="Old Ornament">Old Ornament</option>
+                                <option value="Additional Charges">Additional Charges</option>
+                            </select>
+                        </form> 
+                    </td>
+                    <td><input type="text" id="addtotal3"></td>
+                    <td><label id="addNetTotal3"></label></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="f4">
+        <div class="modeofpayment">
+            <label>Mode of Payment:</label>
+            <form id="myForm">
+                <select id="mode" name="selectOption">
+                    <option value="credit">credit</option>
+                    <option value="debit">debit</option>
+                    <option value="cash">cash</option>
+                </select>
+            </form> 
+        </div>
+        
+        <div class="payable">
+            <Label class="TotalPayableLable">NetTotal : </Label>
+            <input type="number" id="TotalPayableinput" disabled>
+        </div>
+    </div>
+
+    <div id="endBtn">
+        <button id="saveBill">Save</button>
+        <button id="gstReport">GST Report</button>
+        <!-- <a href="mainpage.html">Home</a> -->
+    </div>
+    
+    <script src="./js/GoldPage.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
